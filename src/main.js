@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
-import DefaultTemplate from './layouts/DefaultTemplate.vue'
+import BaseTemplate from './layouts/BaseTemplate.vue'
 import router from './routes'
 
-createApp(DefaultTemplate)
+createApp(BaseTemplate)
     .use(router)
     .mount('#app');
