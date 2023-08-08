@@ -74,3 +74,20 @@
         </div>
     </div>
 </template>
+
+
+<script>
+import { mapActions, mapMutations } from 'vuex'
+
+export default {
+    mounted(){
+        this.getCompanies()
+    },
+
+    methods: {
+        ...mapActions([
+            'getCompanies'
+        ])
+    }
+}
+</script>
