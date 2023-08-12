@@ -8,5 +8,4 @@ export default {
         return axios.get(`${API_VERSION}/${RESOURCE}`) 
                         .then(response => commit('SET_COMPANY', response.data))
     }
-
 }

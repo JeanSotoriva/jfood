@@ -2,9 +2,12 @@ require('./bootstrap')
 import { createApp } from 'vue'
 import BaseTemplate from './layouts/BaseTemplate.vue'
 import router from './routes'
-import store from './vuex'
+import store from './store'
+import ToastPlugin from '@/plugins/VueToastify';
 
-createApp(BaseTemplate)
-    .use(router)
-    .use(store)
-    .mount('#app');
+const app = createApp(BaseTemplate);
+
+app.use(router);
+app.use(store);
+app.use(ToastPlugin);
+app.mount('#app');
